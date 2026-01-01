@@ -1,4 +1,11 @@
 function Hero() {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -20,12 +27,19 @@ function Hero() {
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#projects" className="px-6 py-3 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition">
+          <button
+            onClick={() => handleScroll("projects")}
+            className="px-6 py-3 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition"
+          >
             View My Work
-          </a>
-          <a href="#contact" className="px-6 py-3 border border-gray-400 rounded-lg hover:bg-white hover:text-black transition">
+          </button>
+
+          <button
+            onClick={() => handleScroll("contact")}
+            className="px-6 py-3 border border-gray-400 rounded-lg hover:bg-white hover:text-black transition"
+          >
             Get In Touch
-          </a>
+          </button>
         </div>
 
       </div>
