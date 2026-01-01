@@ -6,21 +6,35 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Projects", href: "#projects" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "YouTube", href: "#youtube" },
-    { label: "Contact", href: "#contact" },
+    { label: "Projects", id: "projects" },
+    { label: "About", id: "about" },
+    { label: "Skills", id: "skills" },
+    { label: "YouTube", id: "youtube" },
+    { label: "Contact", id: "contact" },
   ];
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full bg-[rgb(27,37,61)] backdrop-blur border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
-        <a
-          href="#home"
+        {/* Logo & Name */}
+        <button
+          onClick={scrollToTop}
           className="group flex items-center gap-3"
+          aria-label="Scroll to top"
         >
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
             <img
@@ -33,14 +47,14 @@ function Header() {
           <span className="text-base sm:text-lg font-semibold text-white transition-colors duration-300 group-hover:text-cyan-400">
             Kale Praveen Raj
           </span>
-        </a>
+        </button>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-8 text-gray-300 font-medium">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.label}
-              href={link.href}
+              onClick={() => handleScroll(link.id)}
               className="
                 relative
                 transition-colors
@@ -58,7 +72,7 @@ function Header() {
               "
             >
               {link.label}
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -72,23 +86,18 @@ function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Navigation */}
       {menuOpen && (
         <div className="lg:hidden bg-[rgb(27,37,61)] border-t border-gray-800">
           <nav className="flex flex-col items-center gap-6 py-6 text-gray-300 font-medium">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.label}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="
-                  transition-colors
-                  duration-300
-                  hover:text-cyan-400
-                "
+                onClick={() => handleScroll(link.id)}
+                className="transition-colors duration-300 hover:text-cyan-400"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </nav>
         </div>
