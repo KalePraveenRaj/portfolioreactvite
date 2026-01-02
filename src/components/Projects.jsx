@@ -55,8 +55,8 @@ function Projects() {
           />
           <ProjectCard
             image={portfolio}
-            title="portFolio with react+vite+tailwindcss"
-            description="Developed using react, vite and tailwindscc."
+            title="PortFolio with react+vite+tailwindcss"
+            description="Developed using react, vite and tailwindcss."
             github="https://github.com/KalePraveenRaj/portfolioreactvite"
             live="https://kalepraveenraj.github.io/portfolioreactvite/"
           />
