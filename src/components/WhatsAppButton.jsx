@@ -1,28 +1,47 @@
+import { useEffect, useState } from "react";
 
-function WhatsAppButton(){
-        return (
+function WhatsAppButton() {
+  const [visible, setVisible] = useState(false);
+
+  const phone = "918500058880";
+  const message =
+    "Hi Praveen, I visited your portfolio and would like to connect.";
+
+  useEffect(() => {
+    function handleScroll() {
+      setVisible(window.scrollY > 200);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  if (!visible) return null;
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  return (
     <a
-      href="https://wa.me/919876543210?text=Hi%20Praveen,%20I%20visited%20your%20portfolio"
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
       className="
         fixed bottom-5 right-5 z-50
-        flex items-center justify-center
         w-14 h-14 rounded-full
-        bg-green-500 text-white
+        bg-cyan-500 text-white
+        flex items-center justify-center
         shadow-lg
-        hover:bg-green-600 hover:scale-110
+        hover:bg-cyan-600 hover:scale-110
         transition-all duration-300
       "
     >
-      {/* WhatsApp SVG Icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
         className="w-7 h-7 fill-current"
       >
-        <path d="M19.11 17.205c-.372-.186-2.2-1.085-2.54-1.207-.34-.124-.586-.186-.833.186-.248.372-.958 1.207-1.174 1.455-.216.248-.433.279-.805.093-.372-.186-1.57-.578-2.992-1.843-1.106-.987-1.852-2.207-2.068-2.579-.216-.372-.023-.573.163-.759.168-.168.372-.433.558-.65.186-.216.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.833-2.01-1.142-2.75-.3-.72-.605-.622-.833-.633-.216-.011-.465-.014-.713-.014-.248 0-.651.093-.992.465-.34.372-1.299 1.27-1.299 3.093 0 1.823 1.33 3.587 1.515 3.835.186.248 2.62 4.003 6.353 5.607.888.383 1.58.612 2.12.783.89.283 1.7.243 2.34.148.714-.106 2.2-.9 2.51-1.77.31-.868.31-1.614.216-1.77-.093-.155-.34-.248-.713-.434zM16.003 2.003c-7.732 0-14 6.268-14 14 0 2.474.648 4.793 1.783 6.8L2 30l7.379-1.94c1.947 1.065 4.18 1.673 6.624 1.673 7.732 0 14-6.268 14-14s-6.268-14-14-14z" />
+        <path d="M16 2C8.27 2 2 8.27 2 16c0 2.47.65 4.79 1.78 6.8L2 30l7.38-1.94A13.93 13.93 0 0 0 16 30c7.73 0 14-6.27 14-14S23.73 2 16 2zm0 25.46c-2.12 0-4.1-.62-5.77-1.69l-.41-.25-4.38 1.15 1.17-4.26-.27-.44A11.43 11.43 0 1 1 16 27.46z" />
       </svg>
     </a>
   );
