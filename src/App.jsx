@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import YouTube from "./components/YouTube";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import WhatsAppButton from "./components/WhatsAppButton";
 function App() {
   return (
     <>
@@ -18,8 +18,10 @@ function App() {
         <Skills />
         <YouTube />
         <Contact />
+        <WhatsAppButton/>
       </main>
       <Footer />
+      
     </>
   );
 }
