@@ -4,6 +4,7 @@ import deepSnapImg from "../assets/projects/deepSnap.jpg";
 import floatingIconImg from "../assets/projects/floatingIcon.png";
 import portfolioImg from "../assets/projects/portfolio.JPG";
 import swaggerImg from "../assets/projects/swaggerOpenAPI.JPG";
+import portfolio from "../assets/projects/portfolioreact.JPG";
 
 function Projects() {
   return (
@@ -51,6 +52,13 @@ function Projects() {
             description="Developed using Swagger and Spring to showcase CRUD operations."
             github="https://github.com/KalePraveenRaj/CrudOperationsSpringBoot"
             live="https://kalepraveenraj.github.io/portfolio/"
+          />
+          <ProjectCard
+            image={portfolio}
+            title="portFolio with react+vite+tailwindcss"
+            description="Developed using react, vite and tailwindscc."
+            github="https://github.com/KalePraveenRaj/portfolioreactvite"
+            live="https://kalepraveenraj.github.io/portfolioreactvite/"
           />
 
         </div>
