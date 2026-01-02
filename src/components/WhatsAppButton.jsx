@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ReactComponent as WhatsAppIcon } from "../assets/whatsapp.svg";
+import { WhatsAppIcon } from "../assets/whatsapp.svg";
 
 function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
