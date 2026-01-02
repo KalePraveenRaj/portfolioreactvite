@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ReactComponent as WhatsAppIcon } from "../assets/whatsapp.svg";
 
 function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -27,23 +28,16 @@ function WhatsAppButton() {
       aria-label="WhatsApp"
       className="
         fixed bottom-5 right-5 z-50
-        w-14 h-14
-        rounded-full
-        bg-green-500
+        w-14 h-14 rounded-full
+        bg-cyan-500
         flex items-center justify-center
         shadow-lg
-        hover:scale-110
-        transition-transform duration-300
+        hover:bg-cyan-600 hover:scale-110
+        transition-all duration-300
       "
     >
-      {/* WhatsApp Icon ONLY */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 32 32"
-        className="w-7 h-7 fill-white"
-      >
-        <path d="M16 2C8.27 2 2 8.27 2 16c0 2.47.65 4.79 1.78 6.8L2 30l7.38-1.94A13.93 13.93 0 0 0 16 30c7.73 0 14-6.27 14-14S23.73 2 16 2zm0 25.46c-2.12 0-4.1-.62-5.77-1.69l-.41-.25-4.38 1.15 1.17-4.26-.27-.44A11.43 11.43 0 1 1 16 27.46z" />
-      </svg>
+      {/* WhatsApp SVG */}
+      <WhatsAppIcon className="w-7 h-7 fill-white" />
     </a>
   );
 }
