@@ -25,10 +25,12 @@ function Projects() {
           <ProjectCard
             image={deepSnapImg}
             title="DeepSnap"
-            description="Developed to extract text from images using ElectronJS."
-            github="https://github.com/KalePraveenRaj/DeepSnap"
-            live="https://kalepraveenraj.github.io/portfolio/"
-          />
+            description="Electron desktop app to extract text from images."
+            github="https://github.com/KalePraveenRaj/deepsnap"
+            live="https://github.com/KalePraveenRaj/deepsnap/releases"
+            liveLabel="Download"
+           />
+
 
           <ProjectCard
             image={floatingIconImg}
