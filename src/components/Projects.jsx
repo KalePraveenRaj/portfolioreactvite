@@ -5,7 +5,7 @@ import floatingIconImg from "../assets/projects/floatingIcon.png";
 import portfolioImg from "../assets/projects/portfolio.JPG";
 import swaggerImg from "../assets/projects/swaggerOpenAPI.JPG";
 import portfolio from "../assets/projects/portfolioreact.JPG";
-
+import todoApp from "../assets/projects/todo_app.JPG";
 function Projects() {
   return (
     <section
@@ -61,6 +61,13 @@ function Projects() {
             description="Developed using react, vite and tailwindcss."
             github="https://github.com/KalePraveenRaj/portfolioreactvite"
             live="https://kalepraveenraj.github.io/portfolioreactvite/"
+          />
+          <ProjectCard
+            image={todoApp}
+            title="Todo App developed using Flutter"
+            description="Developed todo application inspired by google tasks"
+            github="https://github.com/KalePraveenRaj/flutter_todoApp"
+            live="https://kalepraveenraj.github.io/flutter_todoApp/"
           />
 
         </div>
