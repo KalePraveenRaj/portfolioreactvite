@@ -6,7 +6,7 @@ import portfolioImg from "../assets/projects/portfolio.JPG";
 import swaggerImg from "../assets/projects/swaggerOpenAPI.JPG";
 import portfolio from "../assets/projects/portfolioreact.JPG";
 import todoApp from "../assets/projects/todo_app.JPG";
-import snakesandladder from "../assets/projects/snakes_and_ladder.JPG";
+import snakesandladder from "../assets/projects/snakes_and_ladders.JPG";
 
 function Projects() {
   return (
