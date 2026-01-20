@@ -106,7 +106,7 @@ function YouTube() {
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-6 mt-16">
           <a
-            href="https://www.youtube.com/@kalepraveenraj6536"
+            href="https://www.youtube.com/@kalepraveenraj"
             target="_blank"
             rel="noreferrer"
             className="
