@@ -6,6 +6,8 @@ import portfolioImg from "../assets/projects/portfolio.JPG";
 import swaggerImg from "../assets/projects/swaggerOpenAPI.JPG";
 import portfolio from "../assets/projects/portfolioreact.JPG";
 import todoApp from "../assets/projects/todo_app.JPG";
+import snakesandladder from "../assets/projects/snakes_and_ladder.JPG";
+
 function Projects() {
   return (
     <section
@@ -68,6 +70,14 @@ function Projects() {
             description="Developed todo application inspired by google tasks"
             github="https://github.com/KalePraveenRaj/flutter_todoApp"
             live="https://kalepraveenraj.github.io/flutter_todoApp/"
+          />
+
+          <ProjectCard
+            image={snakesandladder}
+            title="Snakes and Ladders game"
+            description="Built snakes and ladder game application using flutter and provided the apk file as well in the git hub repository"
+            github="https://github.com/KalePraveenRaj/snakes_and_ladders"
+            live="https://kalepraveenraj.github.io/snakes_and_ladders/"
           />
 
         </div>
