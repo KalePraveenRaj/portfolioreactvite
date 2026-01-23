@@ -5,7 +5,7 @@ function YouTube() {
     { id: "1qLxrQ-_g5w", title: "Hello World!" },
     { id: "qIEhHPTd0MY", title: "My Portfolio Website" },
     { id: "IYlzet7yPis", title: "FloatingIcon" },
-    { id: "_szqUbFCPlQ", title: "FloatingIcon FullStack" },
+    { id: "Egz6MOXl9jw", title: "Password Manager" },
     { id: "tlI58Wz49Kk", title: "CRUD Operations Backend" },
     { id:  "KTeIRGrUhJM",title:"Portfolio website"},
     { id:  "zmNNIMT5Y4Q",title:"Todo_App Flutter"},
