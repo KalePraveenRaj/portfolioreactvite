@@ -7,7 +7,7 @@ import swaggerImg from "../assets/projects/swaggerOpenAPI.JPG";
 import portfolio from "../assets/projects/portfolioreact.JPG";
 import todoApp from "../assets/projects/todo_app.JPG";
 import snakesandladder from "../assets/projects/snakes_and_ladders.jpg";
-
+import passwordmanager from "../assets/projects/password_manager.png";
 function Projects() {
   return (
     <section
@@ -79,6 +79,16 @@ function Projects() {
             github="https://github.com/KalePraveenRaj/snakes_and_ladders"
             live="https://kalepraveenraj.github.io/snakes_and_ladders/"
           />
+
+          <ProjectCard
+            image={passwordmanager}
+            title="Password Manager App"
+            description="Built Password Manager application with flutter and provided the apk file as well in the git hub repository"
+            github="https://github.com/KalePraveenRaj/Password_Manager"
+            live="https://kalepraveenraj.github.io/Password_Manager/"
+          />
+
+          
 
         </div>
       </div>
