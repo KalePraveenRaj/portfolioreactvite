@@ -36,36 +36,59 @@ function Header() {
           className="group flex items-center gap-3"
           aria-label="Scroll to top"
         >
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
-            <img
-              src={logo}
-              alt="Logo"
-              className="w-full h-full object-cover"
-            />
+          <div
+            className="
+              w-9 h-9 sm:w-10 sm:h-10
+              rounded-full overflow-hidden
+              transition
+              group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]
+            "
+          >
+            <img src={logo} alt="Logo" className="w-full h-full object-cover" />
           </div>
 
-          <span className="text-base sm:text-lg font-semibold text-white transition-colors duration-300 group-hover:text-cyan-400">
+          <span
+            className="
+              text-base sm:text-lg font-semibold
+              text-white
+              transition-all duration-300
+              group-hover:bg-gradient-to-r
+              group-hover:from-cyan-400
+              group-hover:via-purple-500
+              group-hover:to-pink-500
+              group-hover:bg-clip-text
+              group-hover:text-transparent
+            "
+          >
             Kale Praveen Raj
           </span>
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-8 text-gray-300 font-medium">
+        <nav className="hidden lg:flex gap-8 font-medium">
           {navLinks.map((link) => (
             <button
               key={link.label}
               onClick={() => handleScroll(link.id)}
               className="
                 relative
-                transition-colors
-                duration-300
-                hover:text-white
+                text-gray-300
+                transition-all duration-300
+                hover:bg-gradient-to-r
+                hover:from-cyan-400
+                hover:via-purple-500
+                hover:to-pink-500
+                hover:bg-clip-text
+                hover:text-transparent
                 after:absolute
                 after:left-0
                 after:-bottom-1
                 after:h-[2px]
                 after:w-0
-                after:bg-cyan-400
+                after:bg-gradient-to-r
+                after:from-cyan-400
+                after:via-purple-500
+                after:to-pink-500
                 after:transition-all
                 after:duration-300
                 hover:after:w-full
@@ -79,7 +102,11 @@ function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-white text-2xl transition-transform duration-300 hover:scale-110"
+          className="
+            lg:hidden text-white text-2xl
+            transition
+            hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.8)]
+          "
           aria-label="Toggle menu"
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
@@ -89,12 +116,21 @@ function Header() {
       {/* Mobile Navigation */}
       {menuOpen && (
         <div className="lg:hidden bg-[rgb(27,37,61)] border-t border-gray-800">
-          <nav className="flex flex-col items-center gap-6 py-6 text-gray-300 font-medium">
+          <nav className="flex flex-col items-center gap-6 py-6 font-medium">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => handleScroll(link.id)}
-                className="transition-colors duration-300 hover:text-cyan-400"
+                className="
+                  text-gray-300
+                  transition-all duration-300
+                  hover:bg-gradient-to-r
+                  hover:from-cyan-400
+                  hover:via-purple-500
+                  hover:to-pink-500
+                  hover:bg-clip-text
+                  hover:text-transparent
+                "
               >
                 {link.label}
               </button>
