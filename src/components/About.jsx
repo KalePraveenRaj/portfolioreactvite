@@ -45,7 +45,7 @@ function About() {
 
         {/* Resume Button */}
         <a
-  href="/resume.pdf"
+  href="resume.pdf"
   download="resume.pdf"
   className="
     px-6 py-3
