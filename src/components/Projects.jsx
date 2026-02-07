@@ -8,6 +8,7 @@ import portfolio from "../assets/projects/portfolioreact.JPG";
 import todoApp from "../assets/projects/todo_app.JPG";
 import snakesandladder from "../assets/projects/snakes_and_ladders.jpg";
 import passwordmanager from "../assets/projects/password_manager.png";
+import expensetracker from "../assets/projects/expense_tracker.png";
 function Projects() {
   return (
     <section
@@ -86,6 +87,13 @@ function Projects() {
             description="Built Password Manager application with flutter and provided the apk file as well in the git hub repository"
             github="https://github.com/KalePraveenRaj/Password_Manager"
             live="https://kalepraveenraj.github.io/Password_Manager/"
+          />
+          <ProjectCard
+            image={expensetracker}
+            title="Expense Tracker"
+            description="Developed using flutter and Dart, mysql to store the data."
+            github="https://github.com/KalePraveenRaj/expense_tracker"
+            live="https://kalepraveenraj.github.io/portfolioreactvite/"
           />
 
           
