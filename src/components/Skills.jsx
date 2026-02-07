@@ -49,6 +49,11 @@ const skills = [
 ];
 
 function Skills() {
+  const gradientShadow = {
+    boxShadow:
+      "0 25px 50px rgba(34,211,238,0.22), 0 25px 50px rgba(168,85,247,0.18), 0 25px 50px rgba(236,72,153,0.15)",
+  };
+
   return (
     <section
       id="skills"
@@ -64,31 +69,42 @@ function Skills() {
         {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="
-                flex
-                flex-col
-                items-center
-                justify-center
-                gap-3
-                bg-[rgba(0,0,0,0.35)]
-                rounded-2xl
-                p-6
-                shadow-[0_20px_40px_rgba(0,0,0,0.6)]
-                hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)]
-                hover:-translate-y-1
-                transition
-              "
-            >
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className="w-12 h-12 object-contain"
+            <div key={index} className="group relative">
+
+              {/* Gradient Shadow */}
+              <div
+                className="
+                  absolute inset-0
+                  rounded-2xl
+                  opacity-0
+                  transition-opacity duration-300
+                  group-hover:opacity-100
+                "
+                style={gradientShadow}
               />
-              <p className="text-sm text-gray-300 font-medium">
-                {skill.name}
-              </p>
+
+              {/* Card */}
+              <div
+                className="
+                  relative
+                  flex flex-col items-center justify-center gap-3
+                  bg-[rgba(0,0,0,0.35)]
+                  rounded-2xl
+                  p-6
+                  transition-all duration-300
+                  hover:-translate-y-1
+                "
+              >
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-12 h-12 object-contain"
+                />
+                <p className="text-sm text-gray-300 font-medium">
+                  {skill.name}
+                </p>
+              </div>
+
             </div>
           ))}
         </div>
