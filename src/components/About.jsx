@@ -45,21 +45,21 @@ function About() {
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
-          download
-          className="
-            px-6
-            py-3
-            bg-cyan-500
-            text-black
-            font-semibold
-            rounded-lg
-            hover:bg-cyan-400
-            transition
-          "
-        >
-          Download Resume
-        </a>
+  href="/resume.pdf"
+  download="Kale_Praveen_Raj_Resume.pdf"
+  className="
+    px-6 py-3
+    bg-cyan-500
+    text-black
+    font-semibold
+    rounded-lg
+    hover:bg-cyan-400
+    transition
+  "
+>
+  Download Resume
+</a>
+
 
       </div>
     </section>
