@@ -91,7 +91,7 @@ function Contact() {
               <div className="flex gap-8 text-2xl text-gray-300 mb-8">
                 <a href="https://github.com/kalepraveenraj" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaGithub /></a>
                 <a href="https://linkedin.com/in/kale-praveen-raj-7b2178130" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaLinkedin /></a>
-                <a href="https://www.youtube.com/@kalepraveenraj6536" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaYoutube /></a>
+                <a href="https://www.youtube.com/@kalepraveenraj" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaYoutube /></a>
                 <a href="https://www.instagram.com/praveen_raj_kale_1729/" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaInstagram /></a>
                 <a href="https://www.facebook.com/praveen.raj.135388/" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaFacebook /></a>
                 <a href="https://twitter.com/kalepraveenraj" target="_blank" rel="noreferrer" className="hover:text-white transition"><FaTwitter /></a>
