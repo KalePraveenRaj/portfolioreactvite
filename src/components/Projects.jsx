@@ -66,6 +66,14 @@ function Projects() {
             github="https://github.com/KalePraveenRaj/portfolioreactvite"
             live="https://kalepraveenraj.github.io/portfolioreactvite/"
           />
+          <ProjectCard
+            image={portfolio}
+            title="Portfolio built with NextJS"
+            description="Built with NextJS"
+            github="https://github.com/KalePraveenRaj/portfolio_nextjs"
+            live="https://kalepraveenraj.github.io/portfolio_nextjs/"
+          />
+          
 
           <ProjectCard
             image={todoApp}
