@@ -9,6 +9,7 @@ import todoApp from "../assets/projects/todo_app.JPG";
 import snakesandladder from "../assets/projects/snakes_and_ladders.jpg";
 import passwordmanager from "../assets/projects/password_manager.png";
 import expensetracker from "../assets/projects/expense_tracker.png";
+import AIChatBot from "../assets/projects/restaurent_ChatBot.png";
 
 function Projects() {
   return (
@@ -96,6 +97,13 @@ function Projects() {
             description="Flutter + MySQL based expense tracker."
             github="https://github.com/KalePraveenRaj/expense_tracker"
             live="https://kalepraveenraj.github.io/portfolioreactvite/"
+          />
+          <ProjectCard
+            image={AIChatBot}
+            title="AI Restaurant Chat Application"
+            description="Built with Flutter and Riverpod for state management, GitHub for Version Control."
+            github="https://github.com/KalePraveenRaj/Avyxon_AI_Labs"
+            live="https://github.com/KalePraveenRaj/Avyxon_AI_Labs/releases/tag/v1.0.0"
           />
 
         </div>
