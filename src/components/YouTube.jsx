@@ -16,6 +16,7 @@ function YouTube() {
     { id: "zmNNIMT5Y4Q", title: "Todo App (Flutter)" },
     { id: "6Vo6J1f1kaw", title: "Snakes & Ladders (Flutter)" },
     { id: "huUBZg-rqmo", title: "Expense Tracker (Flutter)" },
+    { id: "ttKJOUwQokg", title: "AI Chat Bot" },
   ];
 
   return (
